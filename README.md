@@ -49,6 +49,7 @@ docker tag randfood:latest 125881730842.dkr.ecr.us-east-1.amazonaws.com/randfood
 docker push 125881730842.dkr.ecr.us-east-1.amazonaws.com/randfood:latest
 ```
 <img width="600" alt="show1" src="/img/ECR.png">    
+<img width="600" alt="show1" src="/img/endofC9.png">   
 
 6. go to AWS app runner, import the image of ECR into app runner, deploy the app
 7. after deploy success, click the url then we can see our project
@@ -71,6 +72,8 @@ https://m7gpmc5m3p.us-east-1.awsapprunner.com/
 ```
     minikube start
 ```
+<img width="600" alt="show1" src="/img/kubeStart.png">
+
 * view dashboard
 ```
     minikube dashboard --url
@@ -97,4 +100,6 @@ https://m7gpmc5m3p.us-east-1.awsapprunner.com/
     kubectl delete deployment hi-minikube
     minikube stop
 ```
+<img width="600" alt="show1" src="/img/kubeStop.png">
+
 ##

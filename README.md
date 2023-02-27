@@ -18,5 +18,30 @@
 
 ## deployment platform
 1. AWS APP Runner
-
+1. deploy the docker
+#my username is: sasays
+#my project name is: randfood
+    docker login -u username
+    enter the password
+    docker build . -t username/project
+2. run minikube
+#start the minikube
+    minikube start
+#view dashboard
+    minikube dashboard --url
+-----------------
+#create deployment and view it
+    kubectl create deployment hi-minikube --image=registry.hub.docker.com/sasays/randfood
+    kubectl get deployments
+#deploy microserver and expose it
+    kubectl expose deployment hi-minikube --type=LoadBalancer --port=8080
+    kubectl get service hi-minikube
+    minikube service hi-minikube  --url
+#we can get the web url and access it via curl
+    http://192.168.49.2:32470
+    curl http://192.168.49.2:32470
+#clean up
+    kubectl delete service hi-minikube
+    kubectl delete deployment hi-minikube
+    minikube stop
 ##

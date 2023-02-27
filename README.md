@@ -17,7 +17,9 @@
 ## project show
 
 ## deployment platform
-1. AWS APP Runner
+### AWS APP Runner
+
+### Use miniKube
 1. deploy the docker
 #my username is: sasays
 #my project name is: randfood
@@ -29,7 +31,6 @@
     minikube start
 #view dashboard
     minikube dashboard --url
------------------
 #create deployment and view it
     kubectl create deployment hi-minikube --image=registry.hub.docker.com/sasays/randfood
     kubectl get deployments

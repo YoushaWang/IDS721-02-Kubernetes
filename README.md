@@ -26,9 +26,10 @@ My project will randomly recommend a popular dish for customer.
 ```
     cargo run
 ```
-## project show
+## project display
 1. in the "/", show the topic of the project
 <img width="600" alt="show1" src="/img/show_index.png">
+
 2. in the "/food", a dish name is recommended for customer
 <img width="600" alt="show2" src="/img/show_food.png">
 
@@ -38,7 +39,8 @@ My project will randomly recommend a popular dish for customer.
 2. install virtual enviroment and rust as written before
 3. in the venv, run the project to check the correctness
 <img width="600" alt="show1" src="/img/C9.png">    
-4. go to AWS ECR and create a private repository, named it as randfood
+
+4. go to AWS ECR and create a private repository, named it as randfood   
 5. in the push command inside the repository, type all code in Cloud9 terminal
 ```
 aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 125881730842.dkr.ecr.us-east-1.amazonaws.com
@@ -47,13 +49,14 @@ docker tag randfood:latest 125881730842.dkr.ecr.us-east-1.amazonaws.com/randfood
 docker push 125881730842.dkr.ecr.us-east-1.amazonaws.com/randfood:latest
 ```
 <img width="600" alt="show1" src="/img/ECR.png">    
+
 6. go to AWS app runner, import the image of ECR into app runner, deploy the app
 7. after deploy success, click the url then we can see our project
 ```
 https://m7gpmc5m3p.us-east-1.awsapprunner.com/
 ```
 <img width="600" alt="show1" src="/img/APP.png">
-   
+
 ### Use miniKube
 1. deploy the docker
 * my username is: sasays

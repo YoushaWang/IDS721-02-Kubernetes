@@ -38,7 +38,7 @@ My project will randomly recommend a popular dish for customer.
 1. use git clone to add code to AWS cloud9
 2. install virtual enviroment and rust as written before
 3. in the venv, run the project to check the correctness
-<img width="600" alt="show1" src="/img/C9.png">    
+<img width="600" alt="C9" src="/img/C9.png">    
 
 4. go to AWS ECR and create a private repository, named it as randfood   
 5. in the push command inside the repository, type all code in Cloud9 terminal
@@ -48,15 +48,15 @@ docker build -t randfood .
 docker tag randfood:latest 125881730842.dkr.ecr.us-east-1.amazonaws.com/randfood:latest
 docker push 125881730842.dkr.ecr.us-east-1.amazonaws.com/randfood:latest
 ```
-<img width="600" alt="show1" src="/img/ECR.png">    
-<img width="600" alt="show1" src="/img/endofC9.png">   
+<img width="600" alt="ECR" src="/img/ECR.png">    
+<img width="600" alt="EndC9" src="/img/endofC9.png">   
 
 6. go to AWS app runner, import the image of ECR into app runner, deploy the app
 7. after deploy success, click the url then we can see our project
 ```
 https://m7gpmc5m3p.us-east-1.awsapprunner.com/
 ```
-<img width="600" alt="show1" src="/img/APP.png">
+<img width="600" alt="APP" src="/img/APP.png">
 
 ### Use miniKube
 1. deploy the docker
@@ -67,12 +67,15 @@ https://m7gpmc5m3p.us-east-1.awsapprunner.com/
     enter the password
     docker build . -t username/project
 ```
+<img width="600" alt="LI" src="/img/LI.png">
+<img width="600" alt="build" src="/img/D_build.png">
+
 2. run minikube
 * start the minikube
 ```
     minikube start
 ```
-<img width="600" alt="show1" src="/img/kubeStart.png">
+<img width="600" alt="start" src="/img/kubeStart.png">
 
 * view dashboard
 ```
@@ -89,10 +92,16 @@ https://m7gpmc5m3p.us-east-1.awsapprunner.com/
     kubectl get service hi-minikube
     minikube service hi-minikube  --url
 ```
+<img width="600" alt="kube" src="/img/kube.png">
+
 * we can get the web url and access it via curl
 ```
     http://192.168.49.2:32470
     curl http://192.168.49.2:32470
+```
+it will return 
+```
+Hello, random dish recommendation for you today!
 ```
 * clean up
 ```
@@ -100,6 +109,6 @@ https://m7gpmc5m3p.us-east-1.awsapprunner.com/
     kubectl delete deployment hi-minikube
     minikube stop
 ```
-<img width="600" alt="show1" src="/img/kubeStop.png">
+<img width="600" alt="stop" src="/img/kubeStop.png">
 
 ##

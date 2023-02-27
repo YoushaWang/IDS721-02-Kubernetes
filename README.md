@@ -35,8 +35,8 @@ My project will randomly recommend a popular dish for customer.
 
 ### Use miniKube
 1. deploy the docker
-*my username is: sasays
-*my project name is: randfood
+* my username is: sasays
+* my project name is: randfood
 ```
     docker login -u username
     enter the password

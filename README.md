@@ -52,7 +52,8 @@ docker push 125881730842.dkr.ecr.us-east-1.amazonaws.com/randfood:latest
 ```
 https://m7gpmc5m3p.us-east-1.awsapprunner.com/
 ```
-<img width="600" alt="show1" src="/img/APP.png">   
+<img width="600" alt="show1" src="/img/APP.png">
+   
 ### Use miniKube
 1. deploy the docker
 * my username is: sasays

@@ -11,5 +11,12 @@
     cargo build
 4. write dockerfile and Makefile
     make format
-    make lint
 5.  run web microservice
+    cargo run
+
+## project show
+
+## deployment platform
+1. AWS APP Runner
+
+##
